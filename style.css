@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000rem;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.calculation,
+.result {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.hidden {
+  display: none;
+}
