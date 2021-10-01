@@ -18,11 +18,13 @@
       <h1 class="title">株の税金計算アプリ</h1>
       <div class="calculation">
         <div class="mb-3">
-          <label for="buyAmount">購入価格</label>
+          <label for="buyAmount">購入価格</label
+          ><span class="required-buyAmount hidden">入力必須</span>
           <input type="number" class="form-control buyAmount" />
         </div>
         <div class="mb-3">
-          <label for="sellAmount">売却価格</label>
+          <label for="sellAmount">売却価格</label
+          ><span class="required-sellAmount hidden">入力必須</span>
           <input type="number" class="form-control sellAmount" />
         </div>
         <button type="submit" class="btn btn-primary calculate">
@@ -32,14 +34,15 @@
       <div class="result hidden">
         <div class="mb-3">
           <label for="tax">税金</label>
-          <input type="number" class="form-control tax" />
+          <input type="text" class="form-control tax" />
         </div>
         <div class="mb-3">
           <label for="profitAfterTax">税引き後利益</label>
-          <input type="number" class="form-control profitAfterTax" />
+          <input type="text" class="form-control profitAfterTax" />
         </div>
         <button type="button" class="btn btn-primary">クリア</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
