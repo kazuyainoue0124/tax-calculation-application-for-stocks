@@ -60,3 +60,19 @@ document.querySelector(".calculate").addEventListener("click", function () {
       profitAfterTax.toLocaleString();
   }
 });
+
+document.querySelector(".clear").addEventListener("click", function () {
+  // 購入価格
+  const buyAmount = Number(document.querySelector(".buyAmount").value);
+  // 売却価格
+  const sellAmount = Number(document.querySelector(".sellAmount").value);
+  // class付与メソッド
+  function addClass(className) {
+    document.querySelector(className).classList.add("hidden");
+  }
+  // 結果を非表示
+  addClass(".result");
+  // 購入価格と売却価格をリセット
+  document.querySelector(".buyAmount").value = "";
+  document.querySelector(".sellAmount").value = "";
+});
